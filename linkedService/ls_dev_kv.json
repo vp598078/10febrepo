@@ -1,0 +1,11 @@
+{
+	"name": "ls_dev_kv",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://projectcicd-dev-kvt.vault.azure.net/"
+		}
+	}
+}
