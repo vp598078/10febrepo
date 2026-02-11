@@ -7,6 +7,26 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "projectcicd-dev-adf"
 		},
+		"ls_destination_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_destination'"
+		},
+		"ls_json_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_json'"
+		},
+		"ls_lastloaddate_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_lastloaddate'"
+		},
+		"ls_lastloaddatejson_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_lastloaddatejson'"
+		},
+		"ls_maxloaddate_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_maxloaddate'"
+		},
 		"ls_dev_kv_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://projectcicd-dev-kvt.vault.azure.net/"
@@ -14,6 +34,30 @@
 		"ls_input_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
 			"defaultValue": "dev-secret"
+		},
+		"ls_lastloaddate_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "vjysqlsrvr.database.windows.net"
+		},
+		"ls_lastloaddate_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db01"
+		},
+		"ls_lastloaddate_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "apple"
+		},
+		"ls_maxloaddate_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "vjysqlsrvr.database.windows.net"
+		},
+		"ls_maxloaddate_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db01"
+		},
+		"ls_maxloaddate_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "apple"
 		},
 		"ls_output_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
@@ -46,8 +90,41 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_destination_connectionString": {
+						"value": "[parameters('ls_destination_connectionString')]"
+					},
+					"ls_json_connectionString": {
+						"value": "[parameters('ls_json_connectionString')]"
+					},
+					"ls_lastloaddate_password": {
+						"value": "[parameters('ls_lastloaddate_password')]"
+					},
+					"ls_lastloaddatejson_connectionString": {
+						"value": "[parameters('ls_lastloaddatejson_connectionString')]"
+					},
+					"ls_maxloaddate_password": {
+						"value": "[parameters('ls_maxloaddate_password')]"
+					},
 					"ls_dev_kv_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ls_dev_kv_properties_typeProperties_baseUrl')]"
+					},
+					"ls_lastloaddate_properties_typeProperties_server": {
+						"value": "[parameters('ls_lastloaddate_properties_typeProperties_server')]"
+					},
+					"ls_lastloaddate_properties_typeProperties_database": {
+						"value": "[parameters('ls_lastloaddate_properties_typeProperties_database')]"
+					},
+					"ls_lastloaddate_properties_typeProperties_userName": {
+						"value": "[parameters('ls_lastloaddate_properties_typeProperties_userName')]"
+					},
+					"ls_maxloaddate_properties_typeProperties_server": {
+						"value": "[parameters('ls_maxloaddate_properties_typeProperties_server')]"
+					},
+					"ls_maxloaddate_properties_typeProperties_database": {
+						"value": "[parameters('ls_maxloaddate_properties_typeProperties_database')]"
+					},
+					"ls_maxloaddate_properties_typeProperties_userName": {
+						"value": "[parameters('ls_maxloaddate_properties_typeProperties_userName')]"
 					},
 					"ls_input_properties_typeProperties_connectionString_secretName": {
 						"value": "[parameters('ls_input_properties_typeProperties_connectionString_secretName')]"

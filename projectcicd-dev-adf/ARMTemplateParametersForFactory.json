@@ -5,11 +5,44 @@
 		"factoryName": {
 			"value": "projectcicd-dev-adf"
 		},
+		"ls_destination_connectionString": {
+			"value": ""
+		},
+		"ls_json_connectionString": {
+			"value": ""
+		},
+		"ls_lastloaddate_password": {
+			"value": ""
+		},
+		"ls_lastloaddatejson_connectionString": {
+			"value": ""
+		},
+		"ls_maxloaddate_password": {
+			"value": ""
+		},
 		"ls_dev_kv_properties_typeProperties_baseUrl": {
 			"value": "https://projectcicd-dev-kvt.vault.azure.net/"
 		},
 		"ls_input_properties_typeProperties_connectionString_secretName": {
 			"value": "dev-secret"
+		},
+		"ls_lastloaddate_properties_typeProperties_server": {
+			"value": "vjysqlsrvr.database.windows.net"
+		},
+		"ls_lastloaddate_properties_typeProperties_database": {
+			"value": "db01"
+		},
+		"ls_lastloaddate_properties_typeProperties_userName": {
+			"value": "apple"
+		},
+		"ls_maxloaddate_properties_typeProperties_server": {
+			"value": "vjysqlsrvr.database.windows.net"
+		},
+		"ls_maxloaddate_properties_typeProperties_database": {
+			"value": "db01"
+		},
+		"ls_maxloaddate_properties_typeProperties_userName": {
+			"value": "apple"
 		},
 		"ls_output_properties_typeProperties_connectionString_secretName": {
 			"value": "dev-secret"
