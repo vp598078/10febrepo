@@ -1,0 +1,26 @@
+{
+	"name": "ds_lastloaddatejson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_lastloaddatejson",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "lastloaddate.json",
+				"container": "lastloaddate"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"lastLoadDate": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

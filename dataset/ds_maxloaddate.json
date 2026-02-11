@@ -1,0 +1,12 @@
+{
+	"name": "ds_maxloaddate",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_maxloaddate",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

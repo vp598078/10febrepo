@@ -1,0 +1,21 @@
+{
+	"name": "ds_dummy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_json",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "empty.json",
+				"container": "dummy"
+			}
+		},
+		"schema": {
+			"type": "object"
+		}
+	}
+}

@@ -45,28 +45,8 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "ds_input",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "ds_output",
-						"type": "DatasetReference"
-					}
-				]
+					"enableStaging": false
+				}
 			},
 			{
 				"name": "Validation1",
@@ -74,10 +54,6 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "ds_input",
-						"type": "DatasetReference"
-					},
 					"timeout": "0.12:00:00",
 					"sleep": 10
 				}

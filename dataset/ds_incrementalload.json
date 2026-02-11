@@ -1,0 +1,12 @@
+{
+	"name": "ds_incrementalload",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_lastloaddate",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
